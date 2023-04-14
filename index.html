@@ -5,14 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<!-- <link rel="stylesheet" href="reset.css"> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js" defer></script>
+	<script src="
+	https://cdn.jsdelivr.net/npm/@reduxjs/toolkit@1.9.3/dist/query/rtk-query.umd.min.js
+	" defer></script>
 	<script src="index.js" defer></script>
 </head>
 <body>
-	<form>
-		<input type="text" name="text" id="todoInput">
-		<button type="button" id="addButton">Add Button</button>
+	<form id="add-todo-form">
+		<input type="text" name="todo" id="todoInput" autofocus>
+		<button>Add Todo</button>
 	</form>
 	<ul id="todoList"></ul>
+	<ul id="filter-list"></ul>
 </body>
 </html>

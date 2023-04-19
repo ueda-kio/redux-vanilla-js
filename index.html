@@ -6,18 +6,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<!-- <link rel="stylesheet" href="reset.css"> -->
+	<link rel="stylesheet" href="style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js" defer></script>
-	<script src="
-	https://cdn.jsdelivr.net/npm/@reduxjs/toolkit@1.9.3/dist/query/rtk-query.umd.min.js
-	" defer></script>
-	<script src="index.js" defer></script>
+	<script src="https://unpkg.com/@reduxjs/toolkit@1.9.3/dist/redux-toolkit.umd.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/recoil/+esm" type="module"></script>
+	<!-- <script src="index.js" defer></script> -->
+	<script src="rtk.js" defer></script>
 </head>
 <body>
 	<form id="add-todo-form">
 		<input type="text" name="todo" id="todoInput" autofocus>
 		<button>Add Todo</button>
 	</form>
-	<ul id="todoList"></ul>
-	<ul id="filter-list"></ul>
+	<div class="list-wrapper">
+		<div>
+			<h2>todo-list</h2>
+			<ul id="todoList"></ul>
+		</div>
+		<div>
+			<h2>complete-list</h2>
+			<ul id="completeList"></ul>
+		</div>
+	</div>
 </body>
 </html>
